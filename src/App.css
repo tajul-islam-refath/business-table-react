@@ -1,0 +1,8 @@
+.App {
+  max-height: 100vh;
+}
+
+.table-container {
+  max-height: 50vh;
+  overflow-y: scroll;
+}

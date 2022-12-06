@@ -14,7 +14,7 @@ export const getSearchResults = async (pageNo, perPage, searchParams) => {
         store.dispatch(setTotal(res.data["data"][0]["Total"][0]["count"]));
       } else {
         store.dispatch(setData([]));
-        store.dispatch(setTotal([]));
+        store.dispatch(setTotal(0));
         ErrorToast("No data found");
       }
     } else {
@@ -22,7 +22,7 @@ export const getSearchResults = async (pageNo, perPage, searchParams) => {
     }
   } catch (err) {
     store.dispatch(setData([]));
-    store.dispatch(setTotal([]));
+    store.dispatch(setTotal(0));
     ErrorToast("Something went worng");
   }
 };
