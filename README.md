@@ -5,5 +5,5 @@
 ```
 1. Pagenation
 2. Item Per Page
-3. Search
+3. Searching result features
 ```
